@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/MainTitleStyle"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/xueshengback"
+                android:layout_width="@dimen/button_height_small"
+                android:layout_height="@dimen/button_height_small"
+                android:layout_marginLeft="@dimen/spacing_smaller"
+                android:background="@drawable/ic_back"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="学生信息统计"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_largest"
+                />
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/font_largest"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_normal"
+            android:paddingRight="@dimen/spacing_normal"
+            >
+            <View
+                style="@style/WireThinHorizontal"/>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="在校学生总人数"
+                    />
+
+                <TextView
+                    android:id="@+id/xueshengzongshu"
+                    style="@style/StuInfoDetail"
+                    tools:text="201614550217"/>
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="男生"
+                    />
+
+                <TextView
+                    android:id="@+id/nansheng"
+                    style="@style/StuInfoDetail"
+                    tools:text="李金泽"/>
+            </TableRow>
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="女生"
+                    />
+
+                <TextView
+                    android:id="@+id/nvsheng"
+                    style="@style/StuInfoDetail"
+                    tools:text="李金泽"/>
+            </TableRow>
+            <View
+                style="@style/WireThinHorizontal"/>
+        </TableLayout>
+        </LinearLayout>
+</ScrollView>

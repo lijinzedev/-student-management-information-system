@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="Student">
+    </dbname>
+    <version value="12">
+    </version>
+    <list>
+<mapping class ="com.example.userlogin.LoginData">
+
+</mapping>
+        <mapping class="com.example.userlogin.StudentMessageDatabase">
+
+        </mapping>
+        <mapping class="com.example.userlogin.User_Roll">
+
+        </mapping>
+        <mapping class="com.example.userlogin.RollDatabase">
+
+        </mapping>
+    </list>
+</litepal>
+
+

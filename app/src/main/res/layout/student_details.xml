@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/light_grey">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/MainTitleStyle"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_edit_back"
+            android:layout_width="@dimen/button_height_small"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_marginLeft="@dimen/spacing_smaller"
+            android:background="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="学生信息编辑"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_largest"
+            />
+        <Button
+            android:id="@+id/updataqueding"
+            android:layout_width="@dimen/button_height_small"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_marginRight="@dimen/spacing_smaller"
+            android:background="@drawable/ic_sure"/>
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/font_largest"
+        android:background="@color/white"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_normal"
+        android:paddingRight="@dimen/spacing_normal"
+        >
+        <View
+            style="@style/WireThinHorizontal"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="学号"
+                />
+
+            <EditText
+                android:id="@+id/updataxuehao"
+                style="@style/StuInfoDetail"
+                android:digits="0123456789"
+                tools:text="201614550217"/>
+
+        </TableRow>
+
+        <View
+            style="@style/WireThinHorizontal"/>
+
+        <TableRow
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="姓名"
+                />
+
+            <EditText
+                android:id="@+id/updataxingming"
+                style="@style/StuInfoDetail"
+                tools:text="李金泽"/>
+        </TableRow>
+        <View
+            style="@style/WireThinHorizontal"/>
+
+        <TableRow
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="班级"
+                />
+
+            <EditText
+                android:id="@+id/updatabanji"
+                style="@style/StuInfoDetail"
+                tools:text="2班"/>
+        </TableRow>
+        <View
+            style="@style/WireThinHorizontal"/>
+
+        <TableRow
+            android:id="@+id/tr_edit_gender"
+            android:background="@drawable/selector_white_button_style"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="性别"
+                />
+
+            <TextView
+                android:id="@+id/updataxingbie"
+                style="@style/StuInfoDetail"
+                tools:text="男"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_next"/>
+        </TableRow>
+
+        <View
+            style="@style/WireThinHorizontal"/>
+
+        <TableRow
+            android:id="@+id/updatatrshengri"
+            android:background="@drawable/selector_white_button_style"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="生日"
+                />
+
+            <TextView
+                android:id="@+id/updatatvshengri"
+                style="@style/StuInfoDetail"
+                tools:text="1998年7月6日"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_next"/>
+
+        </TableRow>
+
+        <View
+            style="@style/WireThinHorizontal"/>
+
+        <TableRow
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="籍贯"
+                />
+
+            <EditText
+                android:id="@+id/updatajiguan"
+                style="@style/StuInfoDetail"
+                tools:text="河北"/>
+        </TableRow>
+
+        <View
+            style="@style/WireThinHorizontal"/>
+
+        <TableRow
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="专业"
+                />
+
+            <EditText
+                android:id="@+id/updatazhuanye"
+                style="@style/StuInfoDetail"
+                tools:text="物联网工程"/>
+        </TableRow>
+
+        <View
+            style="@style/WireThinHorizontal"/>
+
+        <TableRow
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="手机"
+                />
+
+            <EditText
+                android:id="@+id/updatadianhua"
+                style="@style/StuInfoDetail"
+                android:digits="0123456789"
+                tools:text="17369322146"/>
+        </TableRow>
+
+        <View
+            style="@style/WireThinHorizontal"/>
+    </TableLayout>
+
+
+</LinearLayout>
+</ScrollView>

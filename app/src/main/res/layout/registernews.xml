@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/MainTitleStyle"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_edit_back"
+                android:layout_width="@dimen/button_height_small"
+                android:layout_height="@dimen/button_height_small"
+                android:layout_marginLeft="@dimen/spacing_smaller"
+                android:background="@drawable/ic_back"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="用户注册"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_largest"
+                />
+            <Button
+                android:id="@+id/queding"
+                android:layout_width="@dimen/button_height_small"
+                android:layout_height="@dimen/button_height_small"
+                android:layout_marginRight="@dimen/spacing_smaller"
+                android:background="@drawable/ic_sure"/>
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/font_largest"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_normal"
+            android:paddingRight="@dimen/spacing_normal"
+            >
+            <View
+                style="@style/WireThinHorizontal"/>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <EditText
+                    android:id="@+id/user1"
+                    android:hint="请输入账号(必填)"
+                    style="@style/StuInfoDetail"
+                    android:digits="0123456789"
+                    />
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:padding="@dimen/spacing_normal">
+
+
+
+                <EditText
+                    android:id="@+id/pwd1"
+                    android:hint="请输入密码(必填)"
+                    style="@style/StuInfoDetail"
+                    />
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:padding="@dimen/spacing_normal">
+
+
+
+                <EditText
+                    android:id="@+id/pwd2"
+                    android:hint="请再次输入密码(必填)"
+                    style="@style/StuInfoDetail"
+                    />
+            </TableRow>
+
+            <TableRow>
+            <Spinner
+                style="@style/StuInfoDetail"
+                android:id="@+id/miabao"
+                android:spinnerMode="dialog"
+                />
+            </TableRow>
+            <View
+                style="@style/WireThinHorizontal"/>
+            <TableRow
+                android:padding="@dimen/spacing_normal">
+
+                <EditText
+                    android:id="@+id/mibaoneirong"
+                    android:hint="请输入您的密保内容(必填)"
+                    style="@style/StuInfoDetail"
+                    />
+            </TableRow>
+            <View
+                style="@style/WireThinHorizontal"/>
+
+                <TableRow
+                    android:id="@+id/Rshenfen"
+                    android:background="@drawable/selector_white_button_style">
+
+                    <TextView
+                        style="@style/StuInfoType"
+                        android:text="请选择您的注册身份"
+                        />
+
+                    <TextView
+                        android:id="@+id/shenfen"
+                        style="@style/StuInfoDetail"
+                        tools:text="普通用户"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_next"/>
+                </TableRow>
+            <TableRow
+                android:background="@drawable/selector_white_button_style">
+                <EditText
+                    android:id="@+id/rdianhuahaoma"
+                    android:hint="请输入电话号码"
+                    style="@style/StuInfoDetail"
+                    />
+            </TableRow>
+            <View
+                style="@style/WireThinHorizontal"/>
+            <TableRow
+                android:padding="@dimen/spacing_normal">
+
+                <EditText
+                    android:id="@+id/youxiang"
+                    android:hint="请输入您的邮箱"
+                    style="@style/StuInfoDetail"
+                    />
+            </TableRow>
+
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:id="@+id/chushengnianyuetr"
+                android:background="@drawable/selector_white_button_style"
+                android:padding="@dimen/spacing_normal">
+
+
+                <TextView
+                    android:id="@+id/chushengnianyeutv"
+                    style="@style/StuInfoDetail"
+                    android:hint="请选择您的出生年月" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_next" />
+
+            </TableRow>
+            <View
+                style="@style/WireThinHorizontal"/>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <EditText
+                    android:id="@+id/Uyonghumingcheng"
+                    android:hint="请入用户名称"
+                    style="@style/StuInfoDetail"
+                    />
+            </TableRow>
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:padding="@dimen/spacing_normal">
+
+
+
+                <EditText
+                    android:id="@+id/jiatingzhuzhi"
+                    android:hint="请输入您的家庭住址"
+                   style="@style/StuInfoDetail"
+                   />
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+
+
+            <View
+                style="@style/WireThinHorizontal"/>
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>

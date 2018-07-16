@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="查找学生信息" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="增加学生信息" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="修改学生信息" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="学生信息概况" />
+        <item
+            android:id="@+id/nav_daitianjia"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="-----待添加-----" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="版权声明" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="关于" />
+            <item
+                android:id="@+id/nav_xiugai"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="修改密码" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_delete"
+                android:title="退出当前账号" />
+            <item
+                android:id="@+id/nav_exitall"
+                android:icon="@drawable/ic_delete"
+                android:title="退出程序" />
+        </menu>
+    </item>
+
+</menu>

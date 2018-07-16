@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_blue"
+        android:elevation="@dimen/spacing_smaller"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_normal">
+
+        <Button
+            android:id="@+id/find_cancle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:background="@drawable/ic_front" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_search_edit"
+            android:hint="请输入你要搜索的内容"
+            android:maxEms="20"
+            />
+
+        <Button
+            android:id="@+id/find"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:background="@drawable/ic_sure" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/find_recycler_view"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
